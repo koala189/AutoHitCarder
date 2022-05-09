@@ -35,5 +35,5 @@ runs:
       run: |
         pip3 install requests
         pip3 install ddddocr
-        python3 hitcarder.py
+        python3 ${{ github.action_path }}/hitcarder.py
       shell: bash
