@@ -42,7 +42,7 @@ jobs:
           pip3 install ddddocr
       - name: Clock In
         env:
-          ACCOUNT: ${{ secrets.ACCOUNT }}
-          PASSWORD: ${{ secrets.PASSWORD }}
+          ACCOUNT: ${{ secrets.username }}
+          PASSWORD: ${{ secrets.password }}
         run: |
           python3 hitcarder.py ${ACCOUNT} ${PASSWORD}
