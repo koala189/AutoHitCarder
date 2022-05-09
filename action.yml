@@ -37,7 +37,6 @@ runs:
         SERVERCHAN_KEY: ${{ inputs.serverchan_key }}
         PUSHPLUS_TOKEN: ${{ inputs.pushplus_token }}
       run: |
-        cd ${{ github.action_path }}
         pip3 install -r ./requirements.txt
         python3 ./hitcarder.py
       shell: bash
