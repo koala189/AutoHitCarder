@@ -4,7 +4,7 @@ import json
 import re
 import datetime
 import time
-import os
+import sys
 import ddddocr
 import message
 
