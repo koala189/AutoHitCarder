@@ -1,7 +1,3 @@
-name: zju-ncov-hitcarder-action
-description: ZJU-nCov-HitCarder Action.
-author: Long0x0
-
 branding:
   icon: mail
   color: blue
