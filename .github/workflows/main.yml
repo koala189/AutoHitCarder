@@ -42,7 +42,8 @@ jobs:
           pip3 install ddddocr
       - name: Clock In
         env:
-          ACCOUNT: ${{ secrets.username }}
-          PASSWORD: ${{ secrets.password }}
+          ACCOUNT:  ${{ secrets[matrix.username] }}
+          PASSWORD: ${{ secrets[matrix.password] }}
+          TOKEN: ${{ secrets[matrix.dingtalk_token] }}
         run: |
-          python3 hitcarder.py ${ACCOUNT} ${PASSWORD}
+          python3 hitcarder.py ${ACCOUNT} ${PASSWORD} ${TOKEN}
