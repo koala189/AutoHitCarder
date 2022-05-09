@@ -199,8 +199,9 @@ def main(username, password):
 
 
 if __name__ == "__main__":
-    username = os.environ['USERNAME']
-    password = os.environ['PASSWORD']
+    username = sys.argv[1]
+    password = sys.argv[2]
+    dingtalk_token = sys.argv[3]
     try:
         msg = main(username, password)
     except Exception:
