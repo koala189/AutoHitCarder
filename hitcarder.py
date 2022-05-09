@@ -69,6 +69,7 @@ class ClockIn(object):
     def get_captcha(self):
         """Get CAPTCHA code"""
         resp = self.sess.get(self.CAPTCHA_URL)
+        print("成功获取到验证码图片")
         captcha = self.ocr.classification(resp.content)
         print("验证码：", captcha)
         return captcha
