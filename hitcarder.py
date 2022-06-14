@@ -10,8 +10,6 @@ import time
 import datetime
 import os
 import message
-import ddddocr
-import sys
 
 class HitCarder(object):
     """Hit carder class
